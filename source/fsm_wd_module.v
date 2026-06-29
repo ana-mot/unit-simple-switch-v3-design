@@ -1,3 +1,6 @@
+`ifndef FSM_WD_MODULE
+`define FSM_WD_MODULE
+
 module watchdog (
     input clk,      // Clock input
     input rst_n,      // Reset input
@@ -65,3 +68,5 @@ module watchdog (
 
     assign wdog = wdog_s;
 endmodule : watchdog
+
+`endif

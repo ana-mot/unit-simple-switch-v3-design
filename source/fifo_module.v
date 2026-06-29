@@ -1,3 +1,6 @@
+`ifndef FIFO_MODULE
+`define FIFO_MODULE
+
 module fifo # (
     parameter FIFO_SIZE = 256,
     parameter W_WIDTH = 8
@@ -75,3 +78,5 @@ module fifo # (
     assign empty = empty_s;
     assign full = full_s;
 endmodule : fifo
+
+`endif

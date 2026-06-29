@@ -1,3 +1,6 @@
+`ifndef REG_RTL
+`define REG_RTL
+
 module reg_rtl #(
   parameter W_WIDTH = 8
 )(
@@ -19,3 +22,5 @@ module reg_rtl #(
 
   assign q = reg_data;
 endmodule : reg_rtl
+
+`endif

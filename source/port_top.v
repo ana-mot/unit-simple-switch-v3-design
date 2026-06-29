@@ -1,5 +1,6 @@
-`include "fsm_top.v"
-`include "fifo_module.v"
+`ifndef PORT_TOP
+`define PORT_TOP
+
 
 
 module port_top # (
@@ -47,3 +48,5 @@ module port_top # (
 
   assign rd_out = !fifo_full_w;
 endmodule : port_top
+
+`endif

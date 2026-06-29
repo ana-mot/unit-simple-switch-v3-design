@@ -1,4 +1,6 @@
-`include "fsm_wd_module.v"
+`ifndef FSM_MODULE
+`define FSM_MODULE
+
 
 module fsm # (
     parameter W_WIDTH = 8
@@ -94,3 +96,5 @@ module fsm # (
     assign wr_en = wr_en_ff;
     assign feed = feed_wd_ff;
 endmodule : fsm
+
+`endif

@@ -1,6 +1,7 @@
+`ifndef SWITCH_TOP
+`define SWITCH_TOP
+
 // Code your design here
-`include "port_top.v"
-`include "reg_top.v"
 
 
 module switch_top # (
@@ -69,3 +70,5 @@ module switch_top # (
 
   assign read_out = |rd_port2out;
 endmodule : switch_top
+
+`endif

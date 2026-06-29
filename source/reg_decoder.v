@@ -1,3 +1,6 @@
+`ifndef REG_DECODER
+`define REG_DECODER
+
 module reg_decoder # (
   parameter REG_ADDR = 0,
   parameter W_WIDTH = 8
@@ -58,3 +61,5 @@ module reg_decoder # (
   assign wr_en = wr_en_ff;
 
 endmodule : reg_decoder
+
+`endif

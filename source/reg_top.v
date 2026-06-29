@@ -1,5 +1,6 @@
-`include "reg_rtl.v"
-`include "reg_decoder.v"
+`ifndef REG_TOP
+`define REG_TOP
+
 
 module reg_top # (
   parameter REG_ADDR = 0,
@@ -44,3 +45,5 @@ module reg_top # (
 
   assign reg_data2port_out = reg_data2port_w;
 endmodule : reg_top
+
+`endif

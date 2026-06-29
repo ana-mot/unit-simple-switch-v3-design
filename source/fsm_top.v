@@ -1,3 +1,6 @@
+`ifndef FSM_TOP
+`define FSM_TOP
+
 module fsm_top # (
     parameter W_WIDTH = 8
 )(
@@ -31,3 +34,5 @@ module fsm_top # (
         .feed(feed_w)
     );
 endmodule : fsm_top
+
+`endif
